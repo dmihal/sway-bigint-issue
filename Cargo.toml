@@ -1,0 +1,15 @@
+[package]
+authors = ["Fuel Labs"]
+edition = "2021"
+license = "MIT"
+name = "bigint_issue"
+version = "0.0.0"
+
+[dependencies]
+tokio = { version = "1.21.0", features = ["rt", "macros"] }
+ethereum-types = "0.14.1"
+
+[[test]]
+harness = true
+name = "harness"
+path = "tests/harness.rs"
